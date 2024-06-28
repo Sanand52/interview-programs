@@ -181,6 +181,37 @@ namespace teststring
             return result;
         }
 
+        public static string OcceranceofCharacter() 
+        {
+            string str,result;
+
+            char k;
+
+            int count = 0,len = 0;
+
+            Console.WriteLine("enter string");
+
+            str = Console.ReadLine();
+
+            Console.WriteLine("enter character");
+
+            k = Convert.ToChar(Console.ReadLine());
+
+            while (len <= str.Length - 1) 
+            {
+                if (str[len] == k) 
+                {
+                    count++;
+                }
+
+                len++;
+            }
+
+            result = "occurance of char "+ k + " in given string is " + count;
+
+            return result;
+        }
+
         static void Main(string[] args)
         {
 
@@ -196,6 +227,7 @@ namespace teststring
 
             //Console.WriteLine(CountNoofWords());
 
+            Console.WriteLine(OcceranceofCharacter());
 
             Console.ReadLine();
 
